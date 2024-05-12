@@ -27,3 +27,7 @@ CassandraNet follows the [Rust Lang's Code-of-Conduct](https://www.rust-lang.org
 ## Contributing
 
 Feel free to submit a PR at anytime. we embrace open-source, and would love to grow this project with the OSS Community.
+
+## Third-Party libraries Used
+
+Check [license.html](CassandraNet/license.html) for the Libraries used in the project.
