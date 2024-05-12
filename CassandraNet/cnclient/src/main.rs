@@ -1,4 +1,4 @@
-use cncommon::cnprofile;
+use cncommon::profile::cnprofile;
 
 fn main() {
 
