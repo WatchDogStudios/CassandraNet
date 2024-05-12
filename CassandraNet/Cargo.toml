@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = [
+  "cnbackend",
+  "cnlibfrontend",
+
+  #Internal
+  "cncommon"
+]
+
+[workspace.metadata.spellcheck]
+config = "spellcheck.toml"

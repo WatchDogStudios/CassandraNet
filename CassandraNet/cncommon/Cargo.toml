@@ -1,0 +1,7 @@
+[package]
+name = "cncommon"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+superluminal-perf = "0.3.0"
