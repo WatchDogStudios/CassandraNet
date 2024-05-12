@@ -1,4 +1,4 @@
-mod cnprofile;
+pub mod profile;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
