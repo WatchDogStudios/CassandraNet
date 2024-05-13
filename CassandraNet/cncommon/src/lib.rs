@@ -1,3 +1,4 @@
+/// Copyright (C) 2024-present WD Studios L.L.C. & CassandraNet Contributors.
 pub mod profile;
 
 pub fn add(left: usize, right: usize) -> usize {

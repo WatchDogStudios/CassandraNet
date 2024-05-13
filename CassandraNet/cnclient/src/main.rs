@@ -1,3 +1,4 @@
+/// Copyright (C) 2024-present WD Studios L.L.C. & CassandraNet Contributors.
 use cncommon::profile::cnprofile::*;
 
 fn main() {

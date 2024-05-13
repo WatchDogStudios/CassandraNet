@@ -1,3 +1,4 @@
+/// Copyright (C) 2024-present WD Studios L.L.C. & CassandraNet Contributors.
 pub fn add(left: usize, right: usize) -> usize {
     left + right
 }

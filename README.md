@@ -14,9 +14,9 @@ CassandraNet also gives you the ability to add "Plugins/Add-ons" to your instanc
 
 ## How would i Intergrate this within my own systems?
 
-For example, if you use Azure Playfab for managing your games servers, ever since they [Sunset Legacy Multiplayer Servers](https://community.playfab.com/questions/58173/i-wanted-to-host-custom-dedicated-servers-not-on-a.html), You can't connect non-azure servers to Playfab anymore, so you are left with no other option. 
+For example, if you use Azure Playfab for managing your games servers, ever since they [Sunset Legacy Multiplayer Servers](https://community.playfab.com/questions/58173/i-wanted-to-host-custom-dedicated-servers-not-on-a.html), You can't connect non-azure servers to Playfab anymore, so you are left with no other option.
 
-What we recommend, is that you use Services like Playfab if you want a full live-ops solution right off the bat. 
+What we recommend, is that you use Services like Playfab if you want a full live-ops solution right off the bat.
 
 If you want a more managed solution with more control, CassandraNet is the way to go.
 
