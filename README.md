@@ -1,6 +1,6 @@
 # CassandraNet
 
-![Cassandra Logo](data/images/branding/CASS_LOGO_ICON_BLACK_SMALL.png)
+![Cassandra Logo](data/images/branding/CASS_LOGO_CORE_.svg)
 
 A Rust powered server management platform for games. Used internally at WD Studios.
 
