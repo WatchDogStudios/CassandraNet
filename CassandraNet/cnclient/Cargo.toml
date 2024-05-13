@@ -4,4 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-cncommon = { version = "0.1.0", path = "../cncommon" }
+cncommon = { version = "*", path = "../cncommon" }
+cnbackend = { version = "*", path = "../cnbackend" }
+cnlibfrontend = { version = "*", path = "../cnlibfrontend" }

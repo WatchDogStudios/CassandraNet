@@ -1,6 +1,11 @@
-use cncommon::profile::cnprofile;
+use cncommon::profile::cnprofile::*;
 
 fn main() {
-
-    println!("Hello, world!");
+    CnProfile::start_event_with_data("main", "main", 0);
+    for i in 0..100 {
+        CnProfile::start_event("add");
+        let _ = cncommon::add(i, i);
+        CnProfile::end_event();
+    }
+    CnProfile::end_event();
 }
