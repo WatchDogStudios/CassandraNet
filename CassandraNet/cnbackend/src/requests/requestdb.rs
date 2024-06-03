@@ -1,7 +1,8 @@
 /// Copyright (C) 2024-present WD Studios L.L.C. & CassandraNet Contributors.
-use std::{collections::HashMap, hash::Hash};
-
-use tokio::io::{AsyncBufRead, AsyncBufReadExt};
+use std::collections::HashMap;
+use super::request::{CnRequest, Method};
+use cncommon::profile::cnprofile::{CnProfile, Profiler};
+use futures::io::{AsyncBufRead, AsyncBufReadExt};
 
 impl TryFrom<&str> for Method {
     type Error = anyhow::Error;
@@ -9,11 +10,12 @@ impl TryFrom<&str> for Method {
     fn try_from(value: &str) -> Result<Self, Self::Error> {
         match value {
             "GET" => Ok(Method::Get),
-            m => Err(anyhow::anyhow!("unsupported method: {m}")),
+            _ => Err(anyhow::anyhow!("unsupported method: {value}")),
         }
     }
 }
 
+// TODO: im assuming the returned CnRequest's id is currently unset
 pub async fn parse_request(mut stream: impl AsyncBufRead + Unpin) -> anyhow::Result<CnRequest> {
     CnProfile::start_event("parse_request");
     let mut line_buffer = String::new();
@@ -52,9 +54,5 @@ pub async fn parse_request(mut stream: impl AsyncBufRead + Unpin) -> anyhow::Res
         headers.insert(key.to_string(), value.to_string());
     }
 
-    Ok(CnRequest {
-        method,
-        path,
-        headers,
-    })
+    Ok(CnRequest::new(0, method, Some(path), headers))
 }
