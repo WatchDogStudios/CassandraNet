@@ -10,4 +10,3 @@ homepage = "https://wdstudios.tech"
 description = """
 A Rust powered server management platform for games. Used internally at WD Studios.
 """
-[dependencies]

@@ -3,6 +3,8 @@ pub fn add(left: usize, right: usize) -> usize {
     left + right
 }
 
+pub mod requests;
+
 #[cfg(test)]
 mod tests {
     use super::*;
