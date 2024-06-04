@@ -2,7 +2,7 @@
 
 ![Cassandra Logo](data/images/branding/CASS_LOGO_CORE_.svg)
 
-A Rust powered server management platform for games. Used internally at WD Studios.
+A Rust powered server management platform for games. Used internally at WD Studios & is now being open-sourced, and ported over to rust.
 
 ## What is this really?
 
